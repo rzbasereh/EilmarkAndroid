@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EilmarkAndroid</string>
+    <string name="title_home">فروشگاه</string>
+    <string name="title_explore">جستجو</string>
+    <string name="title_cart">سبدخرید</string>
+    <string name="title_wish">علاقه مندی</string>
+    <string name="title_profile">حساب کاربری</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="new_products">جدیدترین محصولات</string>
+    <string name="all">همه</string>
+</resources>
