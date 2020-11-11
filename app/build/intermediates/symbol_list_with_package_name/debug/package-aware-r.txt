@@ -1130,6 +1130,8 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+dimen H5
+dimen H6
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1224,6 +1226,7 @@ dimen compat_notification_large_icon_max_height
 dimen compat_notification_large_icon_max_width
 dimen def_drawer_elevation
 dimen default_dimension
+dimen default_margin
 dimen design_appbar_elevation
 dimen design_bottom_navigation_active_item_max_width
 dimen design_bottom_navigation_active_item_min_width
@@ -1290,6 +1293,7 @@ dimen material_emphasis_high_type
 dimen material_emphasis_medium
 dimen material_text_view_test_line_height
 dimen material_text_view_test_line_height_override
+dimen min_margin
 dimen mtrl_alert_dialog_background_inset_bottom
 dimen mtrl_alert_dialog_background_inset_end
 dimen mtrl_alert_dialog_background_inset_start
@@ -1563,6 +1567,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable artisho
 drawable avd_hide_password
 drawable avd_show_password
 drawable bottom_navigation_view_selector
@@ -1570,6 +1575,7 @@ drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
 drawable btn_checkbox_unchecked_to_checked_mtrl_animation
+drawable btn_icon_primary
 drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
@@ -1824,6 +1830,7 @@ id listMode
 id list_item
 id masked
 id message
+id message_button
 id middle
 id mini
 id month_grid
@@ -1888,6 +1895,9 @@ id percent
 id pin
 id position
 id postLayout
+id product_price
+id product_subTitle
+id product_title
 id progress_circular
 id progress_horizontal
 id radio
@@ -1899,6 +1909,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvContacts
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2091,6 +2102,7 @@ layout fragment_explore
 layout fragment_home
 layout fragment_profile
 layout fragment_wish
+layout item_product
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

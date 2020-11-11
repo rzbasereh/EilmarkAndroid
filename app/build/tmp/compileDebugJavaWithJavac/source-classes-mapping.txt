@@ -1,3 +1,6 @@
+com/example/eilmarkandroid/ProductsAdapter.java
+ com.example.eilmarkandroid.ProductsAdapter
+ com.example.eilmarkandroid.ProductsAdapter$ViewHolder
 com/example/eilmarkandroid/HomeFragment.java
  com.example.eilmarkandroid.HomeFragment
 com/example/eilmarkandroid/WishFragment.java
@@ -11,5 +14,7 @@ com/example/eilmarkandroid/MainActivity.java
  com.example.eilmarkandroid.MainActivity$1
 com/example/eilmarkandroid/ProfileFragment.java
  com.example.eilmarkandroid.ProfileFragment
+com/example/eilmarkandroid/Product.java
+ com.example.eilmarkandroid.Product
 com/example/eilmarkandroid/BuildConfig.java
  com.example.eilmarkandroid.BuildConfig
