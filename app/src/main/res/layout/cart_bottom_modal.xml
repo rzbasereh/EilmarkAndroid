@@ -8,7 +8,6 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_bottom"
         android:paddingVertical="@dimen/default_margin">
 
         <TextView
@@ -47,7 +46,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/border_bottom"
+        android:background="@drawable/border_vertical"
         android:orientation="vertical"
         android:paddingHorizontal="@dimen/default_margin">
 
@@ -164,7 +163,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/default_margin"
-        android:paddingVertical="@dimen/default_margin">
+        android:layout_marginTop="@dimen/default_margin">
 
         <Button
             android:layout_width="wrap_content"
