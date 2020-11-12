@@ -62,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:padding="7dp"
                 android:background="@drawable/btn_icon_primary"
-                android:src="@drawable/ic_dashboard_black_24dp"/>
+                android:src="@drawable/ic_cart_white_24dp"/>
 
         </LinearLayout>
 
