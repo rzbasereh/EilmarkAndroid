@@ -22,6 +22,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            android:id="@+id/close"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
@@ -64,6 +65,7 @@
                 android:background="@drawable/rounded_border"/>
 
             <TextView
+                android:id="@+id/product_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/title_wish"
@@ -163,9 +165,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/default_margin"
-        android:layout_marginTop="@dimen/default_margin">
+        android:layout_marginVertical="@dimen/default_margin">
 
         <Button
+            android:id="@+id/submit_cart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/vazir"
@@ -175,6 +178,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
+            android:id="@+id/remove"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintRight_toLeftOf="@+id/amount"

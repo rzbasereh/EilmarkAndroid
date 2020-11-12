@@ -1576,6 +1576,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable border_bottom
 drawable border_vertical
+drawable bottom_mini_layout
 drawable bottom_navigation_view_selector
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1593,6 +1594,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable flat_bordered_btn
+drawable ic_arrow_left_white_24dp
 drawable ic_cart_black_24dp
 drawable ic_cart_white_24dp
 drawable ic_close_24dp
@@ -1640,6 +1642,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable primary_button
 drawable rounded_border
 drawable rounded_modal
 drawable test_custom_background
@@ -1726,6 +1729,7 @@ id always
 id amount
 id animateToEnd
 id animateToStart
+id arrow_left
 id asConfigured
 id async
 id auto
@@ -1758,6 +1762,7 @@ id chronometer
 id clear_text
 id clip_horizontal
 id clip_vertical
+id close
 id collapseActionView
 id confirm_button
 id container
@@ -1923,6 +1928,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id remove
 id reverseSawtooth
 id right
 id right_icon
@@ -1984,6 +1990,7 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id submit_cart
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2124,6 +2131,7 @@ layout fragment_explore
 layout fragment_home
 layout fragment_profile
 layout fragment_wish
+layout item_cart_product
 layout item_product
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
@@ -2278,6 +2286,7 @@ string title_explore
 string title_home
 string title_notifications
 string title_pay
+string title_payment
 string title_price
 string title_profile
 string title_wish

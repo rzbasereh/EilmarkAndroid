@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,12 +15,18 @@ import java.util.List;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHolder> {
 
-    private Context context;
-    private List<Product> products;
+    public interface RecyclerViewClickListener {
+        void onClick(View view, Product product);
+    }
 
-    public ProductsAdapter(List<Product> products, Context context) {
+    private final RecyclerViewClickListener listener;
+    private Context context;
+    private final List<Product> products;
+
+    public ProductsAdapter(List<Product> products, Context context, RecyclerViewClickListener listener) {
         this.products = products;
         this.context = context;
+        this.listener = listener;
     }
 
     @NonNull
@@ -28,8 +35,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         Context context = parent.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
         View contactView = inflater.inflate(R.layout.item_product, parent, false);
-        ViewHolder viewHolder = new ViewHolder(contactView);
-        return viewHolder;
+        return new ViewHolder(contactView, listener, products);
     }
 
     @Override
@@ -51,19 +57,29 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         return products.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView titleTextView;
         public TextView subTitleTextView;
         public TextView priceTextView;
-        public Button cartBtn;
+        public ImageButton cartBtn;
+        private final RecyclerViewClickListener listener;
+        private final List<Product> products;
 
-        public ViewHolder(View itemView) {
+        public ViewHolder(View itemView, RecyclerViewClickListener listener, List<Product> products) {
             super(itemView);
+            this.listener = listener;
+            this.products = products;
 
             titleTextView = itemView.findViewById(R.id.product_title);
             subTitleTextView = itemView.findViewById(R.id.product_subTitle);
             priceTextView = itemView.findViewById(R.id.product_price);
+            cartBtn = itemView.findViewById(R.id.add_to_cart);
+            cartBtn.setOnClickListener(this);
+        }
 
+        @Override
+        public void onClick(View v) {
+            listener.onClick(v, products.get(getAdapterPosition()));
         }
     }
 }

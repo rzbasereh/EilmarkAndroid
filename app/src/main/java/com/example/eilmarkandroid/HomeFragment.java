@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -27,20 +28,20 @@ public class HomeFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_home, null);
         rvContacts = root.findViewById(R.id.rvContacts);
         showAllBtn = root.findViewById(R.id.show_all);
-        showAllBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CartBottomModal modal = new CartBottomModal();
-                modal.show(getFragmentManager(), "modal");
-            }
-        });
-        products = Product.createProductsList(20);
+        products = Product.createProductsList(10);
         configProductsList(products);
         return root;
     }
 
     private void configProductsList(ArrayList<Product> products) {
-        ProductsAdapter adapter = new ProductsAdapter(products, getActivity());
+        ProductsAdapter.RecyclerViewClickListener listener = (view, product) -> {
+            Bundle args = new Bundle();
+            args.putString("title", product.getTitle());
+            CartBottomModal modal = new CartBottomModal();
+            modal.setArguments(args);
+            modal.show(getFragmentManager(), "modal");
+        };
+        ProductsAdapter adapter = new ProductsAdapter(products, getActivity(), listener);
         rvContacts.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.HORIZONTAL, false));
         rvContacts.setAdapter(adapter);
     }

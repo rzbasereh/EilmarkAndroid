@@ -11,6 +11,7 @@
     <string name="add_to_cart">افزودن به سبد</string>
     <string name="title_price">قیمت</string>
     <string name="title_pay">پرداختی</string>
+    <string name="title_payment">پرداخت</string>
     <string name="title_notifications">Notifications</string>
     <string name="new_products">جدیدترین محصولات</string>
     <string name="all">همه</string>
