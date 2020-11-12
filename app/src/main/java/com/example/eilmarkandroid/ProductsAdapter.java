@@ -13,10 +13,13 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHolder> {
+
+    private Context context;
     private List<Product> products;
 
-    public ProductsAdapter(List<Product> products) {
+    public ProductsAdapter(List<Product> products, Context context) {
         this.products = products;
+        this.context = context;
     }
 
     @NonNull
@@ -41,7 +44,6 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
 
         TextView price = holder.priceTextView;
         price.setText(contact.getPrice() + " تومان");
-
     }
 
     @Override
@@ -53,7 +55,7 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ViewHo
         public TextView titleTextView;
         public TextView subTitleTextView;
         public TextView priceTextView;
-        public Button messageButton;
+        public Button cartBtn;
 
         public ViewHolder(View itemView) {
             super(itemView);

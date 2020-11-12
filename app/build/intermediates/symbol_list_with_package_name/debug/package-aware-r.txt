@@ -975,6 +975,7 @@ color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color colorSecondry
+color dark
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1130,6 +1131,8 @@ color test_mtrl_calendar_day
 color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
+color white
+dimen H4
 dimen H5
 dimen H6
 dimen abc_action_bar_content_inset_material
@@ -1570,6 +1573,8 @@ drawable abc_vector_test
 drawable artisho
 drawable avd_hide_password
 drawable avd_show_password
+drawable border_bottom
+drawable border_vertical
 drawable bottom_navigation_view_selector
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -1586,6 +1591,9 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable flat_bordered_btn
+drawable ic_close_24dp
+drawable ic_dash_primary_24dp
 drawable ic_dashboard_black_24dp
 drawable ic_home_black_24dp
 drawable ic_launcher_background
@@ -1595,6 +1603,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_notifications_black_24dp
+drawable ic_plus_primary_24dp
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1624,6 +1633,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_border
+drawable rounded_modal
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1700,10 +1711,12 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id add_to_cart
 id alertTitle
 id aligned
 id all
 id always
+id amount
 id animateToEnd
 id animateToStart
 id asConfigured
@@ -1830,7 +1843,6 @@ id listMode
 id list_item
 id masked
 id message
-id message_button
 id middle
 id mini
 id month_grid
@@ -1895,6 +1907,7 @@ id percent
 id pin
 id position
 id postLayout
+id product_image
 id product_price
 id product_subTitle
 id product_title
@@ -1936,6 +1949,7 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
+id show_all
 id sin
 id skipCollapsed
 id slide
@@ -2081,6 +2095,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout cart_bottom_modal
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2186,10 +2201,12 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_to_cart
 string all
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string cart_modal_title
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2250,10 +2267,11 @@ string path_password_strike_through
 string search_menu_title
 string status_bar_notification_info_overflow
 string title_cart
-string title_dashboard
 string title_explore
 string title_home
 string title_notifications
+string title_pay
+string title_price
 string title_profile
 string title_wish
 style AlertDialog_AppCompat

@@ -5,6 +5,7 @@
     <dimen name="default_margin">15dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="H4">16sp</dimen>
     <dimen name="H5">15sp</dimen>
     <dimen name="H6">14sp</dimen>
 

@@ -3,6 +3,7 @@ com/example/eilmarkandroid/ProductsAdapter.java
  com.example.eilmarkandroid.ProductsAdapter$ViewHolder
 com/example/eilmarkandroid/HomeFragment.java
  com.example.eilmarkandroid.HomeFragment
+ com.example.eilmarkandroid.HomeFragment$1
 com/example/eilmarkandroid/WishFragment.java
  com.example.eilmarkandroid.WishFragment
 com/example/eilmarkandroid/ExploreFragment.java
@@ -12,6 +13,8 @@ com/example/eilmarkandroid/CartFragment.java
 com/example/eilmarkandroid/MainActivity.java
  com.example.eilmarkandroid.MainActivity
  com.example.eilmarkandroid.MainActivity$1
+com/example/eilmarkandroid/CartBottomModal.java
+ com.example.eilmarkandroid.CartBottomModal
 com/example/eilmarkandroid/ProfileFragment.java
  com.example.eilmarkandroid.ProfileFragment
 com/example/eilmarkandroid/Product.java
