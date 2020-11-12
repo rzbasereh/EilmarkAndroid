@@ -1131,7 +1131,8 @@ int color test_mtrl_calendar_day 0x7f0500cb
 int color test_mtrl_calendar_day_selected 0x7f0500cc
 int color tooltip_background_dark 0x7f0500cd
 int color tooltip_background_light 0x7f0500ce
-int color white 0x7f0500cf
+int color transparent 0x7f0500cf
+int color white 0x7f0500d0
 int dimen H4 0x7f060000
 int dimen H5 0x7f060001
 int dimen H6 0x7f060002
