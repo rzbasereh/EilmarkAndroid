@@ -5,7 +5,8 @@
     <color name="colorSecondry">#A5AEC0</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="lightGray">#f7f6fc</color>
+    <color name="lightGray">#dbdcde</color>
+    <color name="gray">#9a9dad</color>
     <color name="white">#FFFFFF</color>
     <color name="dark">#222127</color>
     <color name="transparent">#00000000</color>

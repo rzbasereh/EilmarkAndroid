@@ -5,14 +5,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!--    <ListView-->
+    <!--    <ScrollView-->
     <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="match_parent"-->
-    <!--        android:scrollbars="none"-->
+    <!--        android:layout_height="0dp"-->
     <!--        app:layout_constraintBottom_toBottomOf="parent"-->
     <!--        app:layout_constraintLeft_toLeftOf="parent"-->
     <!--        app:layout_constraintRight_toRightOf="parent"-->
     <!--        app:layout_constraintTop_toTopOf="parent">-->
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+        android:id="@+id/dots_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:dotsColor="@color/gray"
+        app:dotsCornerRadius="5dp"
+        app:dotsSize="10dp"
+        app:dotsSpacing="2dp"
+        app:dotsWidthFactor="2.5"
+        app:layout_constraintBottom_toBottomOf="@id/view_pager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:progressMode="true"
+        app:selectedDotColor="@color/gray" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,19 +44,19 @@
         android:textColor="@color/dark"
         android:textSize="@dimen/H4"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/view_pager" />
 
     <Button
         android:id="@+id/show_all"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/default_margin"
+        android:background="@color/transparent"
         android:fontFamily="@font/vazir_medium"
         android:text="@string/all"
-        android:background="@color/transparent"
         android:textColor="@color/colorPrimary"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/view_pager" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvContacts"
@@ -47,6 +68,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/show_all" />
 
-    <!--    </ListView>-->
+    <!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

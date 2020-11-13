@@ -11,13 +11,20 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+import androidx.viewpager.widget.ViewPager;
+
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class HomeFragment extends Fragment {
     ArrayList<Product> products;
     RecyclerView rvContacts;
     Button showAllBtn;
+    DotsIndicator dotsIndicator;
+    ViewPager viewPager;
+
 
     @SuppressLint("InflateParams")
     @Nullable
@@ -28,7 +35,17 @@ public class HomeFragment extends Fragment {
         showAllBtn = root.findViewById(R.id.show_all);
         products = Product.createProductsList(10);
         configProductsList(products);
+        initViewPager(root);
         return root;
+    }
+
+    private void initViewPager(View view) {
+        dotsIndicator = view.findViewById(R.id.dots_indicator);
+        viewPager = view.findViewById(R.id.view_pager);
+        List<Slide> slides = Slide.createSlidesList(5);
+        SlidesAdapter adapter = new SlidesAdapter(slides, getContext());
+        viewPager.setAdapter(adapter);
+        dotsIndicator.setViewPager(viewPager);
     }
 
     private void configProductsList(ArrayList<Product> products) {

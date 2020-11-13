@@ -306,6 +306,7 @@ attr customIntegerValue
 attr customNavigationLayout
 attr customPixelDimension
 attr customStringValue
+attr dampingRatio
 attr data
 attr dataPattern
 attr dayInvalidStyle
@@ -328,6 +329,13 @@ attr divider
 attr dividerHorizontal
 attr dividerPadding
 attr dividerVertical
+attr dotsColor
+attr dotsCornerRadius
+attr dotsSize
+attr dotsSpacing
+attr dotsStrokeColor
+attr dotsStrokeWidth
+attr dotsWidthFactor
 attr dragDirection
 attr dragScale
 attr dragThreshold
@@ -693,6 +701,7 @@ attr preserveIconSpacing
 attr pressedTranslationZ
 attr progressBarPadding
 attr progressBarStyle
+attr progressMode
 attr queryBackground
 attr queryHint
 attr radioButtonStyle
@@ -719,6 +728,7 @@ attr searchViewStyle
 attr seekBarStyle
 attr selectableItemBackground
 attr selectableItemBackgroundBorderless
+attr selectedDotColor
 attr selectionRequired
 attr shapeAppearance
 attr shapeAppearanceLargeComponent
@@ -763,6 +773,7 @@ attr state_lifted
 attr statusBarBackground
 attr statusBarForeground
 attr statusBarScrim
+attr stiffness
 attr strokeColor
 attr strokeWidth
 attr subMenuArrow
@@ -1023,6 +1034,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color lightGray
@@ -1588,12 +1600,14 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable circle_shape
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable dot_background
 drawable flat_bordered_btn
 drawable ic_arrow_left_white_24dp
 drawable ic_cart_black_24dp
@@ -1614,6 +1628,8 @@ drawable ic_notifications_black_24dp
 drawable ic_plus_primary_24dp
 drawable ic_profile_dark_24dp
 drawable ic_search_black_24dp
+drawable input_shape
+drawable logo
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -1646,9 +1662,14 @@ drawable notify_panel_notification_icon_bg
 drawable primary_button
 drawable rounded_border
 drawable rounded_modal
+drawable slide
+drawable spring_dot_background
+drawable spring_dot_stroke_background
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable worm_dot_background
+drawable worm_dot_stroke_background
 font vazir
 font vazir_bold
 font vazir_light
@@ -1792,6 +1813,8 @@ id direct
 id disableHome
 id disablePostScroll
 id disableScroll
+id dot
+id dots_indicator
 id dragDown
 id dragEnd
 id dragLeft
@@ -1854,6 +1877,10 @@ id line3
 id linear
 id listMode
 id list_item
+id loading
+id login
+id login_btn
+id logo
 id masked
 id message
 id middle
@@ -1912,6 +1939,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
 id password_toggle
 id path
 id pathRelative
@@ -1924,6 +1952,7 @@ id product_image
 id product_price
 id product_subTitle
 id product_title
+id profile_image
 id progress_circular
 id progress_horizontal
 id radio
@@ -1977,6 +2006,7 @@ id spline
 id split_action_bar
 id spread
 id spread_inside
+id spring_dot
 id square
 id src_atop
 id src_in
@@ -2040,11 +2070,15 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id view_offset_helper
+id view_pager
 id visible
 id visible_removing_fragment_view_tag
+id welcome
 id withText
 id withinBounds
+id worm_dot
 id wrap
 id wrap_content
 id zero_corner_chip
@@ -2109,6 +2143,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_login
 layout activity_main
 layout cart_bottom_modal
 layout custom_dialog
@@ -2127,6 +2162,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dot_layout
 layout fragment_cart
 layout fragment_explore
 layout fragment_home
@@ -2134,6 +2170,7 @@ layout fragment_profile
 layout fragment_wish
 layout item_cart_product
 layout item_product
+layout item_slide
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2171,6 +2208,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spring_dot_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -2186,6 +2224,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout worm_dot_layout
 menu navigation
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2217,6 +2256,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_sign_in
+string action_sign_in_short
 string add_to_cart
 string all
 string app_name
@@ -2234,7 +2275,10 @@ string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string invalid_password
+string invalid_username
 string item_view_role_description
+string login_failed
 string material_slider_range_end
 string material_slider_range_start
 string mtrl_badge_numberless_content_description
@@ -2280,8 +2324,11 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string prompt_email
+string prompt_password
 string search_menu_title
 string status_bar_notification_info_overflow
+string title_activity_login
 string title_cart
 string title_explore
 string title_home
@@ -2291,6 +2338,7 @@ string title_payment
 string title_price
 string title_profile
 string title_wish
+string welcome
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3026,6 +3074,7 @@ styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline
 styleable CustomAttribute attributeName customBoolean customColorDrawableValue customColorValue customDimension customFloatValue customIntegerValue customPixelDimension customStringValue
 styleable DialogFragmentNavigator android_name
+styleable DotsIndicator dotsColor dotsCornerRadius dotsSize dotsSpacing dotsWidthFactor progressMode selectedDotColor
 styleable DrawerArrowToggle arrowHeadLength arrowShaftLength barLength color drawableSize gapBetweenBars spinBars thickness
 styleable DrawerLayout elevation
 styleable ExtendedFloatingActionButton elevation extendMotionSpec hideMotionSpec showMotionSpec shrinkMotionSpec
@@ -3103,6 +3152,7 @@ styleable Slider android_enabled android_value android_stepSize android_valueFro
 styleable Snackbar snackbarButtonStyle snackbarStyle snackbarTextViewStyle
 styleable SnackbarLayout android_maxWidth actionTextColorAlpha animationMode backgroundOverlayColorAlpha backgroundTint backgroundTintMode elevation maxActionInlineWidth
 styleable Spinner android_entries android_popupBackground android_prompt android_dropDownWidth popupTheme
+styleable SpringDotsIndicator dampingRatio dotsColor dotsCornerRadius dotsSize dotsSpacing dotsStrokeColor dotsStrokeWidth stiffness
 styleable State android_id constraints
 styleable StateListDrawable android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable StateListDrawableItem android_drawable
@@ -3124,6 +3174,7 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable WormDotsIndicator dotsColor dotsCornerRadius dotsSize dotsSpacing dotsStrokeColor dotsStrokeWidth
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start
