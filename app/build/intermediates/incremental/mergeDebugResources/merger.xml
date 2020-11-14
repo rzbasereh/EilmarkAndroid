@@ -5965,7 +5965,7 @@
         
         <item name="android:statusBarColor" ns2:targetApi="l">@color/colorPrimary</item>
         
-                <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
     </style><style name="Widget.BottomNavigationView" parent="Widget.Design.BottomNavigationView">
         <item name="android:fontFamily">@font/vazir</item>
         <item name="colorPrimary">@color/colorPrimary</item>
@@ -5974,7 +5974,7 @@
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
     </style><style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@drawable/rounded_modal</item>
-    </style></file><file name="item_slide" path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout/item_slide.xml" qualifiers="" type="layout"/><file name="slide" path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/drawable-v24/slide.jpg" qualifiers="v24" type="drawable"/></source><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/rs/debug"/><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
+    </style></file><file name="item_slide" path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout/item_slide.xml" qualifiers="" type="layout"/><file name="slide" path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/drawable-v24/slide.jpg" qualifiers="v24" type="drawable"/><file name="activity_product" path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout/activity_product.xml" qualifiers="" type="layout"/></source><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/rs/debug"/><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/home/reza/Work/Eilmark/EilmarkAndroid/app/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="AlertDialog">
         <attr name="android:layout"/>
         <attr format="reference" name="buttonPanelSideLayout"/>
         <attr format="reference" name="listLayout"/>

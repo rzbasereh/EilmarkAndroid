@@ -1768,6 +1768,8 @@ id bounce
 id buttonPanel
 id cache_measures
 id cancel_button
+id cart_rv
+id cart_title
 id center
 id center_horizontal
 id center_vertical
@@ -2145,6 +2147,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_login
 layout activity_main
+layout activity_product
 layout cart_bottom_modal
 layout custom_dialog
 layout design_bottom_navigation_item

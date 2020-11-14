@@ -1,4 +1,4 @@
-#Fri Nov 13 13:59:07 IRST 2020
+#Sat Nov 14 15:22:50 IRST 2020
 base.0=/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

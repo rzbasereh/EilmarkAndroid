@@ -8,6 +8,11 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.eilmarkandroid.ui.cart.CartFragment;
+import com.example.eilmarkandroid.ui.explore.ExploreFragment;
+import com.example.eilmarkandroid.ui.home.HomeFragment;
+import com.example.eilmarkandroid.ui.profile.ProfileFragment;
+import com.example.eilmarkandroid.ui.wish.WishFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {

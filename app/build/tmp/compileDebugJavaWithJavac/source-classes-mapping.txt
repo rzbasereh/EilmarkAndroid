@@ -1,59 +1,69 @@
-com/example/eilmarkandroid/ui/login/LoginViewModelFactory.java
- com.example.eilmarkandroid.ui.login.LoginViewModelFactory
-com/example/eilmarkandroid/ui/login/LoginViewModel.java
- com.example.eilmarkandroid.ui.login.LoginViewModel
-com/example/eilmarkandroid/SlidesAdapter.java
- com.example.eilmarkandroid.SlidesAdapter
-com/example/eilmarkandroid/WishFragment.java
- com.example.eilmarkandroid.WishFragment
+com/example/eilmarkandroid/ui/profile/ProfileFragment.java
+ com.example.eilmarkandroid.ui.profile.ProfileFragment
+ com.example.eilmarkandroid.ui.profile.ProfileFragment$1
 com/example/eilmarkandroid/MainActivity.java
  com.example.eilmarkandroid.MainActivity
  com.example.eilmarkandroid.MainActivity$1
-com/example/eilmarkandroid/ProfileFragment.java
- com.example.eilmarkandroid.ProfileFragment
- com.example.eilmarkandroid.ProfileFragment$1
-com/example/eilmarkandroid/ui/login/LoginResult.java
- com.example.eilmarkandroid.ui.login.LoginResult
-com/example/eilmarkandroid/data/LoginRepository.java
- com.example.eilmarkandroid.data.LoginRepository
-com/example/eilmarkandroid/ProductsAdapter.java
- com.example.eilmarkandroid.ProductsAdapter
- com.example.eilmarkandroid.ProductsAdapter$RecyclerViewClickListener
- com.example.eilmarkandroid.ProductsAdapter$ViewHolder
-com/example/eilmarkandroid/ui/login/LoginActivity.java
- com.example.eilmarkandroid.ui.login.LoginActivity
- com.example.eilmarkandroid.ui.login.LoginActivity$1
- com.example.eilmarkandroid.ui.login.LoginActivity$2
- com.example.eilmarkandroid.ui.login.LoginActivity$3
- com.example.eilmarkandroid.ui.login.LoginActivity$4
- com.example.eilmarkandroid.ui.login.LoginActivity$5
-com/example/eilmarkandroid/data/LoginDataSource.java
- com.example.eilmarkandroid.data.LoginDataSource
-com/example/eilmarkandroid/ui/login/LoggedInUserView.java
- com.example.eilmarkandroid.ui.login.LoggedInUserView
-com/example/eilmarkandroid/HomeFragment.java
- com.example.eilmarkandroid.HomeFragment
-com/example/eilmarkandroid/ui/login/LoginFormState.java
- com.example.eilmarkandroid.ui.login.LoginFormState
-com/example/eilmarkandroid/ExploreFragment.java
- com.example.eilmarkandroid.ExploreFragment
-com/example/eilmarkandroid/data/Result.java
- com.example.eilmarkandroid.data.Result
- com.example.eilmarkandroid.data.Result$1
- com.example.eilmarkandroid.data.Result$Error
- com.example.eilmarkandroid.data.Result$Success
-com/example/eilmarkandroid/CartFragment.java
- com.example.eilmarkandroid.CartFragment
-com/example/eilmarkandroid/CartBottomModal.java
- com.example.eilmarkandroid.CartBottomModal
- com.example.eilmarkandroid.CartBottomModal$1
- com.example.eilmarkandroid.CartBottomModal$2
- com.example.eilmarkandroid.CartBottomModal$3
-com/example/eilmarkandroid/data/model/LoggedInUser.java
- com.example.eilmarkandroid.data.model.LoggedInUser
-com/example/eilmarkandroid/Product.java
- com.example.eilmarkandroid.Product
-com/example/eilmarkandroid/Slide.java
- com.example.eilmarkandroid.Slide
+com/example/eilmarkandroid/ui/profile/login/LoginViewModel.java
+ com.example.eilmarkandroid.ui.profile.login.LoginViewModel
+com/example/eilmarkandroid/ui/profile/login/data/Result.java
+ com.example.eilmarkandroid.ui.profile.login.data.Result
+ com.example.eilmarkandroid.ui.profile.login.data.Result$1
+ com.example.eilmarkandroid.ui.profile.login.data.Result$Error
+ com.example.eilmarkandroid.ui.profile.login.data.Result$Success
+com/example/eilmarkandroid/ui/explore/ExploreFragment.java
+ com.example.eilmarkandroid.ui.explore.ExploreFragment
+com/example/eilmarkandroid/ui/cart/CartFragment.java
+ com.example.eilmarkandroid.ui.cart.CartFragment
+com/example/eilmarkandroid/ui/cart/model/CartItem.java
+ com.example.eilmarkandroid.ui.cart.model.CartItem
+com/example/eilmarkandroid/adapter/ProductsAdapter.java
+ com.example.eilmarkandroid.adapter.ProductsAdapter
+ com.example.eilmarkandroid.adapter.ProductsAdapter$RecyclerViewClickListener
+ com.example.eilmarkandroid.adapter.ProductsAdapter$ViewHolder
+com/example/eilmarkandroid/ui/home/model/Slide.java
+ com.example.eilmarkandroid.ui.home.model.Slide
+com/example/eilmarkandroid/ui/home/adapter/SlidesAdapter.java
+ com.example.eilmarkandroid.ui.home.adapter.SlidesAdapter
+com/example/eilmarkandroid/ui/profile/login/LoggedInUserView.java
+ com.example.eilmarkandroid.ui.profile.login.LoggedInUserView
+com/example/eilmarkandroid/ui/profile/login/data/LoginRepository.java
+ com.example.eilmarkandroid.ui.profile.login.data.LoginRepository
+com/example/eilmarkandroid/ui/home/HomeFragment.java
+ com.example.eilmarkandroid.ui.home.HomeFragment
+com/example/eilmarkandroid/ui/profile/login/LoginActivity.java
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity$1
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity$2
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity$3
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity$4
+ com.example.eilmarkandroid.ui.profile.login.LoginActivity$5
+com/example/eilmarkandroid/DBHelper.java
+ com.example.eilmarkandroid.DBHelper
+com/example/eilmarkandroid/ProductActivity.java
+ com.example.eilmarkandroid.ProductActivity
 com/example/eilmarkandroid/BuildConfig.java
  com.example.eilmarkandroid.BuildConfig
+com/example/eilmarkandroid/ui/cart/CartBottomModal.java
+ com.example.eilmarkandroid.ui.cart.CartBottomModal
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$1
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$2
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$3
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$4
+com/example/eilmarkandroid/model/LoggedInUser.java
+ com.example.eilmarkandroid.model.LoggedInUser
+com/example/eilmarkandroid/ui/profile/login/LoginFormState.java
+ com.example.eilmarkandroid.ui.profile.login.LoginFormState
+com/example/eilmarkandroid/ui/profile/login/data/LoginDataSource.java
+ com.example.eilmarkandroid.ui.profile.login.data.LoginDataSource
+com/example/eilmarkandroid/ui/profile/login/LoginViewModelFactory.java
+ com.example.eilmarkandroid.ui.profile.login.LoginViewModelFactory
+com/example/eilmarkandroid/ui/profile/login/LoginResult.java
+ com.example.eilmarkandroid.ui.profile.login.LoginResult
+com/example/eilmarkandroid/ui/wish/WishFragment.java
+ com.example.eilmarkandroid.ui.wish.WishFragment
+com/example/eilmarkandroid/ui/cart/adapter/CartItemsAdapter.java
+ com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter
+ com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter$ViewHolder
+com/example/eilmarkandroid/model/Product.java
+ com.example.eilmarkandroid.model.Product

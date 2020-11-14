@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /home/reza/.gradle/caches/transforms-2/files-2.1/65bbbde17d4a6c1995c009b5b4e0a310/navigation-ui-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.2.1] /home/reza/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2] /home/reza/.gradle/caches/transforms-2/files-2.1/ef6b055aabfd30fd038c91da39a45ec9/jetified-viewpagerdotsindicator-4.1.2/AndroidManifest.xml:2:1-13:12
@@ -46,25 +46,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/reza/.gradle/caches
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/reza/.gradle/caches/transforms-2/files-2.1/7814cceeb7ac44ad46459a3c3c62875b/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/reza/.gradle/caches/transforms-2/files-2.1/40996d6039fa2fb22354b30f3d767665/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/reza/.gradle/caches/transforms-2/files-2.1/a77c810a56173ccf6fb339f045a6aacd/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:3:5-41
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:5:5-22:19
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:5:5-23:19
 MERGED from [com.google.android.material:material:1.2.1] /home/reza/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.1] /home/reza/.gradle/caches/transforms-2/files-2.1/c63d4a666c0a1ba98c2e2f24b9638d9e/material-1.2.1/AndroidManifest.xml:22:5-20
 MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:4.1.2] /home/reza/.gradle/caches/transforms-2/files-2.1/ef6b055aabfd30fd038c91da39a45ec9/jetified-viewpagerdotsindicator-4.1.2/AndroidManifest.xml:11:5-47
@@ -89,26 +89,30 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/reza/
 		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:11:9-52
-activity#com.example.eilmarkandroid.ui.login.LoginActivity
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:12:9-14:69
+activity#com.example.eilmarkandroid.ProductActivity
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:12:9-62
+	android:name
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:12:19-50
+activity#com.example.eilmarkandroid.ui.profile.login.LoginActivity
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:13:9-15:60
 	android:label
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:14:13-57
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:15:13-57
 	android:name
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:13:13-51
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:14:13-59
 activity#com.example.eilmarkandroid.MainActivity
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:15:9-21:20
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:15:19-47
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:16:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/AndroidManifest.xml
