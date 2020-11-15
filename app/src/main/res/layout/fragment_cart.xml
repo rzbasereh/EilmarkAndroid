@@ -3,7 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/simple_toolbar"/>
 
     <TextView
         android:id="@+id/cart_title"
@@ -15,7 +20,7 @@
         android:textColor="@color/dark"
         android:textSize="@dimen/H4"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
         tools:ignore="RtlSymmetry" />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -42,10 +47,11 @@
             android:background="@drawable/primary_button">
 
             <TextView
+                android:id="@+id/total_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/vazir_bold"
-                android:text="12000 تومان"
+                android:text="12000"
                 android:textColor="@color/white"
                 android:textSize="@dimen/H4"
                 app:layout_constraintRight_toRightOf="parent"

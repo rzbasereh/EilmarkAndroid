@@ -1954,6 +1954,7 @@ id product_image
 id product_price
 id product_subTitle
 id product_title
+id products
 id profile_image
 id progress_circular
 id progress_horizontal
@@ -1978,10 +1979,12 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
+id search
 id search_badge
 id search_bar
 id search_button
 id search_close_btn
+id search_container
 id search_edit_frame
 id search_go_btn
 id search_mag_icon
@@ -2056,8 +2059,11 @@ id title
 id titleDividerNoCustom
 id title_template
 id toggle
+id toolbar
+id toolbar_title
 id top
 id topPanel
+id total_price
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -2211,6 +2217,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout simple_toolbar
 layout spring_dot_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip

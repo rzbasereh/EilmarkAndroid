@@ -20,6 +20,10 @@
         "source": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_cart_black_24dp.png"
     },
     {
+        "merged": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/res/merged/debug/layout_simple_toolbar.xml.flat",
+        "source": "/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout/simple_toolbar.xml"
+    },
+    {
         "merged": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/res/merged/debug/layout_fragment_cart.xml.flat",
         "source": "/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout/fragment_cart.xml"
     },
@@ -442,6 +446,10 @@
     {
         "merged": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_plus_primary_24dp.png.flat",
         "source": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/generated/res/pngs/debug/drawable-ldpi/ic_plus_primary_24dp.png"
+    },
+    {
+        "merged": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/res/merged/debug/layout-v21_fragment_explore.xml.flat",
+        "source": "/home/reza/Work/Eilmark/EilmarkAndroid/app/src/main/res/layout-v21/fragment_explore.xml"
     },
     {
         "merged": "/home/reza/Work/Eilmark/EilmarkAndroid/app/build/intermediates/res/merged/debug/drawable-anydpi-v24_ic_close_24dp.xml.flat",

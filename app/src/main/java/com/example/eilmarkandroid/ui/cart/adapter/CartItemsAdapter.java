@@ -1,11 +1,14 @@
 package com.example.eilmarkandroid.ui.cart.adapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
@@ -57,8 +60,9 @@ public class CartItemsAdapter extends RecyclerView.Adapter<CartItemsAdapter.View
         return cartItems.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView titleTextView, priceTextView, amountTextView;
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView titleTextView, priceTextView, amountTextView, totalPriceText;
+        ImageButton addItemBtn, removeItemBtn;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,6 +70,31 @@ public class CartItemsAdapter extends RecyclerView.Adapter<CartItemsAdapter.View
             titleTextView = itemView.findViewById(R.id.product_title);
             priceTextView = itemView.findViewById(R.id.product_price);
             amountTextView = itemView.findViewById(R.id.amount);
+            addItemBtn = itemView.findViewById(R.id.add);
+            removeItemBtn = itemView.findViewById(R.id.remove);
+
+            addItemBtn.setOnClickListener(this);
+            removeItemBtn.setOnClickListener(this);
+
+        }
+
+        @SuppressLint("SetTextI18n")
+        @Override
+        public void onClick(View v) {
+            LayoutInflater inflater = LayoutInflater.from(itemView.getContext());
+            View view = inflater.inflate(R.layout.fragment_cart, null);
+            totalPriceText = view.findViewById(R.id.total_price);
+            int amount = Integer.parseInt((String) amountTextView.getText(), 10);
+            int totalPrice = Integer.parseInt((String) totalPriceText.getText(), 10);
+            if (v == addItemBtn) {
+                totalPrice += amount;
+                totalPriceText.setText(totalPrice+"");
+                amountTextView.setText(String.valueOf(amount + 1));
+            } else {
+                totalPrice -= amount;
+                totalPriceText.setText(totalPrice+"");
+                amountTextView.setText(String.valueOf(amount - 1));
+            }
         }
     }
 }
