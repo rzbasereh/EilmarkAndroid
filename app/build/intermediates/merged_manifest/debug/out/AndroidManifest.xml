@@ -18,6 +18,8 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.EilmarkAndroid" >
+        <activity android:name="com.example.eilmarkandroid.ui.cart.CheckOutActivity" />
+        <activity android:name="com.example.eilmarkandroid.ui.home.PreviewAllActivity" />
         <activity android:name="com.example.eilmarkandroid.ProductActivity" />
         <activity
             android:name="com.example.eilmarkandroid.ui.profile.login.LoginActivity"

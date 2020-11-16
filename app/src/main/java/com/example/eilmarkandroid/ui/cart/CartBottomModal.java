@@ -1,7 +1,6 @@
 package com.example.eilmarkandroid.ui.cart;
 
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,10 +16,7 @@ import androidx.annotation.Nullable;
 import com.example.eilmarkandroid.DBHelper;
 import com.example.eilmarkandroid.MainActivity;
 import com.example.eilmarkandroid.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-
-import java.util.Objects;
 
 
 public class CartBottomModal extends BottomSheetDialogFragment {
@@ -33,7 +29,7 @@ public class CartBottomModal extends BottomSheetDialogFragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.cart_bottom_modal, container, false);
+        View view = inflater.inflate(R.layout.modal_add_item, container, false);
         db = new DBHelper(getActivity());
         Bundle args = getArguments();
         titleText = view.findViewById(R.id.product_title);

@@ -1,6 +1,7 @@
 package com.example.eilmarkandroid.ui.cart;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,6 +31,7 @@ import java.util.ArrayList;
 public class CartFragment extends Fragment {
     RecyclerView cartRV;
     TextView totalPriceText;
+    ConstraintLayout startCheckOut;
 
     ArrayList<Product> products;
     ArrayList<CartItem> items;
@@ -47,6 +50,16 @@ public class CartFragment extends Fragment {
         db = new DBHelper(getActivity());
         cartRV = view.findViewById(R.id.cart_rv);
         totalPriceText = view.findViewById(R.id.total_price);
+        startCheckOut = view.findViewById(R.id.start_check_out);
+
+        startCheckOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CheckOutActivity.class);
+                startActivity(intent);
+            }
+        });
+
         products = Product.createProductsList(10);
         try {
             items = db.getCartItems();

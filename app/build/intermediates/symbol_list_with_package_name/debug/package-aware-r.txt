@@ -1610,6 +1610,7 @@ drawable design_snackbar_background
 drawable dot_background
 drawable flat_bordered_btn
 drawable ic_arrow_left_white_24dp
+drawable ic_arrow_right_primary_24dp
 drawable ic_cart_black_24dp
 drawable ic_cart_white_24dp
 drawable ic_close_24dp
@@ -1628,6 +1629,7 @@ drawable ic_notifications_black_24dp
 drawable ic_plus_primary_24dp
 drawable ic_profile_dark_24dp
 drawable ic_search_black_24dp
+drawable ic_trash_primary_20dp
 drawable input_shape
 drawable logo
 drawable material_ic_calendar_black_24dp
@@ -2020,6 +2022,7 @@ id standard
 id start
 id startHorizontal
 id startVertical
+id start_check_out
 id staticLayout
 id staticPostLayout
 id stop
@@ -2060,6 +2063,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbar
+id toolbar_back
 id toolbar_title
 id top
 id topPanel
@@ -2151,10 +2155,11 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_check_out
 layout activity_login
 layout activity_main
+layout activity_preview_all
 layout activity_product
-layout cart_bottom_modal
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -2180,6 +2185,7 @@ layout fragment_wish
 layout item_cart_product
 layout item_product
 layout item_slide
+layout modal_add_item
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2217,7 +2223,6 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
-layout simple_toolbar
 layout spring_dot_layout
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
@@ -2234,6 +2239,8 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout toolbar_primary
+layout toolbar_secondry
 layout worm_dot_layout
 menu navigation
 mipmap ic_launcher

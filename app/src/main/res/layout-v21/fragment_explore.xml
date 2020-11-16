@@ -7,7 +7,7 @@
 
     <include
         android:id="@+id/toolbar"
-        layout="@layout/simple_toolbar" />
+        layout="@layout/toolbar_primary" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:background="@color/white"
