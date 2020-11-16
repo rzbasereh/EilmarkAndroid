@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.eilmarkandroid.DBHelper;
+import com.example.eilmarkandroid.MainActivity;
 import com.example.eilmarkandroid.model.Product;
 import com.example.eilmarkandroid.R;
 import com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter;
@@ -50,14 +51,6 @@ public class CartFragment extends Fragment {
         try {
             items = db.getCartItems();
             totalPriceText.setText(CartItem.getTotalPrice(products, items));
-
-            View root = inflater.inflate(R.layout.activity_main, null);
-            BottomNavigationView navigation = root.findViewById(R.id.navigation);
-            BadgeDrawable drawable = navigation.getOrCreateBadge(R.id.navigation_cart);
-            drawable.setBackgroundColor(Color.BLUE);
-            drawable.setNumber(items.size());
-            drawable.setVisible(true);
-
             configCartList(products, items);
         } catch (Exception e) {
             Toast.makeText(getContext(), "" + e, Toast.LENGTH_SHORT).show();
@@ -66,7 +59,20 @@ public class CartFragment extends Fragment {
     }
 
     private void configCartList(ArrayList<Product> products, ArrayList<CartItem> items) {
-        CartItemsAdapter adapter = new CartItemsAdapter(products, items, getActivity());
+        CartItemsAdapter.RecyclerViewClickListener listener = (view, item, amount) -> {
+            if (amount == 0) {
+                db.deleteCartItem(item.getId());
+                ((MainActivity) getContext()).showCartBudget();
+                Toast.makeText(getContext(), "محصول از سبد شما حذف شد", Toast.LENGTH_SHORT).show();
+            } else {
+                db.updateCartItem(item.getId(), amount);
+            }
+            int totalPrice = Integer.parseInt((String) totalPriceText.getText(), 10);
+            totalPrice += amount;
+            totalPriceText.setText(String.valueOf(totalPrice));
+        };
+
+        CartItemsAdapter adapter = new CartItemsAdapter(products, items, getActivity(), listener);
         cartRV.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
         cartRV.setAdapter(adapter);
     }

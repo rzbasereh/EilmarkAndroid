@@ -1,9 +1,8 @@
 com/example/eilmarkandroid/ui/profile/ProfileFragment.java
  com.example.eilmarkandroid.ui.profile.ProfileFragment
  com.example.eilmarkandroid.ui.profile.ProfileFragment$1
-com/example/eilmarkandroid/MainActivity.java
- com.example.eilmarkandroid.MainActivity
- com.example.eilmarkandroid.MainActivity$1
+com/example/eilmarkandroid/ui/profile/login/LoginResult.java
+ com.example.eilmarkandroid.ui.profile.login.LoginResult
 com/example/eilmarkandroid/ui/profile/login/LoginViewModel.java
  com.example.eilmarkandroid.ui.profile.login.LoginViewModel
 com/example/eilmarkandroid/ui/profile/login/data/Result.java
@@ -13,8 +12,8 @@ com/example/eilmarkandroid/ui/profile/login/data/Result.java
  com.example.eilmarkandroid.ui.profile.login.data.Result$Success
 com/example/eilmarkandroid/ui/explore/ExploreFragment.java
  com.example.eilmarkandroid.ui.explore.ExploreFragment
-com/example/eilmarkandroid/ui/cart/CartFragment.java
- com.example.eilmarkandroid.ui.cart.CartFragment
+com/example/eilmarkandroid/model/Product.java
+ com.example.eilmarkandroid.model.Product
 com/example/eilmarkandroid/ui/cart/model/CartItem.java
  com.example.eilmarkandroid.ui.cart.model.CartItem
 com/example/eilmarkandroid/adapter/ProductsAdapter.java
@@ -29,8 +28,8 @@ com/example/eilmarkandroid/ui/profile/login/LoggedInUserView.java
  com.example.eilmarkandroid.ui.profile.login.LoggedInUserView
 com/example/eilmarkandroid/ui/profile/login/data/LoginRepository.java
  com.example.eilmarkandroid.ui.profile.login.data.LoginRepository
-com/example/eilmarkandroid/ui/home/HomeFragment.java
- com.example.eilmarkandroid.ui.home.HomeFragment
+com/example/eilmarkandroid/DBHelper.java
+ com.example.eilmarkandroid.DBHelper
 com/example/eilmarkandroid/ui/profile/login/LoginActivity.java
  com.example.eilmarkandroid.ui.profile.login.LoginActivity
  com.example.eilmarkandroid.ui.profile.login.LoginActivity$1
@@ -38,32 +37,34 @@ com/example/eilmarkandroid/ui/profile/login/LoginActivity.java
  com.example.eilmarkandroid.ui.profile.login.LoginActivity$3
  com.example.eilmarkandroid.ui.profile.login.LoginActivity$4
  com.example.eilmarkandroid.ui.profile.login.LoginActivity$5
-com/example/eilmarkandroid/DBHelper.java
- com.example.eilmarkandroid.DBHelper
+com/example/eilmarkandroid/ui/profile/login/LoginViewModelFactory.java
+ com.example.eilmarkandroid.ui.profile.login.LoginViewModelFactory
 com/example/eilmarkandroid/ProductActivity.java
  com.example.eilmarkandroid.ProductActivity
 com/example/eilmarkandroid/BuildConfig.java
  com.example.eilmarkandroid.BuildConfig
-com/example/eilmarkandroid/ui/cart/CartBottomModal.java
- com.example.eilmarkandroid.ui.cart.CartBottomModal
- com.example.eilmarkandroid.ui.cart.CartBottomModal$1
- com.example.eilmarkandroid.ui.cart.CartBottomModal$2
- com.example.eilmarkandroid.ui.cart.CartBottomModal$3
- com.example.eilmarkandroid.ui.cart.CartBottomModal$4
+com/example/eilmarkandroid/ui/wish/WishFragment.java
+ com.example.eilmarkandroid.ui.wish.WishFragment
 com/example/eilmarkandroid/model/LoggedInUser.java
  com.example.eilmarkandroid.model.LoggedInUser
 com/example/eilmarkandroid/ui/profile/login/LoginFormState.java
  com.example.eilmarkandroid.ui.profile.login.LoginFormState
 com/example/eilmarkandroid/ui/profile/login/data/LoginDataSource.java
  com.example.eilmarkandroid.ui.profile.login.data.LoginDataSource
-com/example/eilmarkandroid/ui/profile/login/LoginViewModelFactory.java
- com.example.eilmarkandroid.ui.profile.login.LoginViewModelFactory
-com/example/eilmarkandroid/ui/profile/login/LoginResult.java
- com.example.eilmarkandroid.ui.profile.login.LoginResult
-com/example/eilmarkandroid/ui/wish/WishFragment.java
- com.example.eilmarkandroid.ui.wish.WishFragment
+com/example/eilmarkandroid/ui/home/HomeFragment.java
+ com.example.eilmarkandroid.ui.home.HomeFragment
+com/example/eilmarkandroid/ui/cart/CartBottomModal.java
+ com.example.eilmarkandroid.ui.cart.CartBottomModal
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$1
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$2
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$3
+ com.example.eilmarkandroid.ui.cart.CartBottomModal$4
+com/example/eilmarkandroid/ui/cart/CartFragment.java
+ com.example.eilmarkandroid.ui.cart.CartFragment
 com/example/eilmarkandroid/ui/cart/adapter/CartItemsAdapter.java
  com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter
+ com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter$RecyclerViewClickListener
  com.example.eilmarkandroid.ui.cart.adapter.CartItemsAdapter$ViewHolder
-com/example/eilmarkandroid/model/Product.java
- com.example.eilmarkandroid.model.Product
+com/example/eilmarkandroid/MainActivity.java
+ com.example.eilmarkandroid.MainActivity
+ com.example.eilmarkandroid.MainActivity$1

@@ -13,8 +13,12 @@ import java.util.ArrayList;
 
 public class DBHelper extends SQLiteOpenHelper {
     Context context;
+    SQLiteDatabase db;
+
     public DBHelper(Context context) {
         super(context, "Eilmark.db", null, 1);
+        db = this.getWritableDatabase();
+        db.execSQL("create Table if not exists CartItem(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, productID integer not null, quantity integer default 1) ");
         this.context = context;
     }
 
@@ -30,7 +34,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     //  CartItem Table Start
     public boolean insertCartItem(int productID, int quantity) {
-        SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("productID", productID);
         values.put("quantity", quantity);
@@ -39,7 +42,6 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public boolean updateCartItem(int id, int quantity) {
-        SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("quantity", quantity);
         Cursor cursor = db.rawQuery("select * from CartItem where id=?", new String[]{String.valueOf(id)});
@@ -51,7 +53,6 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     public boolean deleteCartItem(int id) {
-        SQLiteDatabase db = this.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from CartItem where id=?", new String[]{String.valueOf(id)});
         if (cursor.getCount() > 0) {
             long result = db.delete("CartItem", "id=?", new String[]{String.valueOf(id)});
@@ -60,20 +61,26 @@ public class DBHelper extends SQLiteOpenHelper {
         return false;
     }
 
+    public void dropCartItem() {
+        db.execSQL("drop Table if exists CartItem");
+    }
+
     public ArrayList<CartItem> getCartItems() {
         ArrayList<CartItem> cardItems = new ArrayList<CartItem>();
-        SQLiteDatabase db = this.getWritableDatabase();
-        Cursor cursor = db.rawQuery("select * from CartItem", null);
-        if (cursor.getCount() > 0) {
-            while (cursor.moveToNext()) {
-                int id = cursor.getInt(0);
-                int productID = cursor.getInt(1);
-                int quantity = cursor.getInt(2);
-                cardItems.add(new CartItem(id, productID, quantity));
+        try {
+            Cursor cursor = db.rawQuery("select * from CartItem", null);
+            if (cursor.getCount() > 0) {
+                while (cursor.moveToNext()) {
+                    int id = cursor.getInt(0);
+                    int productID = cursor.getInt(1);
+                    int quantity = cursor.getInt(2);
+                    cardItems.add(new CartItem(id, productID, quantity));
+                }
             }
-        }
+        } catch (Exception ignored){}
         return cardItems;
     }
+
 //    Cart Table End
 
 }

@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.annotation.SuppressLint;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 
@@ -13,20 +15,27 @@ import com.example.eilmarkandroid.ui.explore.ExploreFragment;
 import com.example.eilmarkandroid.ui.home.HomeFragment;
 import com.example.eilmarkandroid.ui.profile.ProfileFragment;
 import com.example.eilmarkandroid.ui.wish.WishFragment;
+import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+    BottomNavigationView navigation;
+    DBHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        db = new DBHelper(this);
+        db.getWritableDatabase();
+        navigation = findViewById(R.id.navigation);
+
         //loading the default fragment
         loadFragment(new HomeFragment());
+        showCartBudget();
 
         //getting bottom navigation view and attaching the listener
-        BottomNavigationView navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
@@ -74,6 +83,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         return false;
+    }
+
+    public void showCartBudget() {
+        BadgeDrawable drawable = navigation.getOrCreateBadge(R.id.navigation_cart);
+        drawable.setNumber(db.getCartItems().size());
+        drawable.setVisible(true);
     }
 
 }

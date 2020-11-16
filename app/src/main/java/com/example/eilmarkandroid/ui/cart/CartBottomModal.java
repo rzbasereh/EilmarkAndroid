@@ -1,6 +1,7 @@
 package com.example.eilmarkandroid.ui.cart;
 
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,9 +15,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.eilmarkandroid.DBHelper;
+import com.example.eilmarkandroid.MainActivity;
 import com.example.eilmarkandroid.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
+
+import java.util.Objects;
 
 
 public class CartBottomModal extends BottomSheetDialogFragment {
@@ -60,8 +64,7 @@ public class CartBottomModal extends BottomSheetDialogFragment {
                     boolean status = db.insertCartItem(productID, quantity);
                     if (status) {
                         Toast.makeText(getContext(), "محصول به سبد شما اضافه شد!", Toast.LENGTH_SHORT).show();
-                        BottomNavigationView navigation = view.findViewById(R.id.navigation);
-                        navigation.getOrCreateBadge(R.id.navigation_cart).setNumber(1);
+                        ((MainActivity) getContext()).showCartBudget();
                     } else {
                         Toast.makeText(getContext(), "Error", Toast.LENGTH_SHORT).show();
                     }
